@@ -39,7 +39,7 @@ export default async function handler(
 /**
  * curl -X POST -H "Content-Type: application/json"
  * --data '{"jsonrpc": "2.0", "method": "Filecoin.EthGetTransactionHashByCid",
- * "params": [{"/":"bafy2bzaceawy5ezs2jslo4e7qqh33vzwcpcn4xjcrgwlvo3kkn3lp3jjxfoww"}],
+ * "params": [{"/":"bafkreidsg4ii5zxlqhuf4cwjjlmxzpgoqza7y3xj2kk7ongawiqgns24ha"}],
  * "id": 1}' https://api.hyperspace.node.glif.io/rpc/v0
  */
 
