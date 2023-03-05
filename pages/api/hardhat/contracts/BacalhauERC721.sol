@@ -26,8 +26,8 @@ contract BacalhauERC721 is ERC721URIStorage {
       string tokenURI
     );
 
-    constructor() ERC721("Bacalhau NFTs", "BAC") {
-      console.log("This is my Bacalhau ERC721 NFT contract");
+    constructor() ERC721("ZK NFTs", "BAC") {
+      console.log("This is my ZK NFTs ERC721 NFT contract");
     }
 
     function mintBacalhauNFT(address owner, string memory ipfsURI)
