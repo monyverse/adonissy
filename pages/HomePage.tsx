@@ -178,10 +178,10 @@ const HomePage: FC<HomePageProps> = () => {
 
     await callBacalhauJob(promptInput)
       .then(async (cid) => {
-        console.log('Bacalhau Job Successful', cid);
+        console.log('Adonis Job Successful', cid);
         setStatus({
           ...INITIAL_TRANSACTION_STATE,
-          loading: loadingMsg('Creating Metadata from Bacalhau Job Results...'),
+          loading: loadingMsg('Creating Metadata from Adonis Job Results...'),
         });
         const imageIPFSOrigin = `ipfs://${cid}/outputs/image0.png`;
         const imageHTTPURL = `https://${cid}.ipfs.nftstorage.link/outputs/image0.png`;
@@ -194,7 +194,7 @@ const HomePage: FC<HomePageProps> = () => {
             setStatus({
               ...INITIAL_TRANSACTION_STATE,
               success: genericMsg(
-                'Success running Bacalhau Job',
+                'Success running Adoniis',
                 `Job output CID: ${cid}`
               ),
             });
@@ -229,7 +229,7 @@ const HomePage: FC<HomePageProps> = () => {
           .then((imageIPFS) => {
             console.log(imageIPFS);
             nftJSON = {
-              name: 'Bacalhau Hyperspace NFTs 2023',
+              name: 'Adonis Hyperspace ZK NFTs 2023',
               description: promptInput,
               image: imageData, // Blob
               properties: {
