@@ -25,7 +25,7 @@ export const Footer: FC<FooterProps> = ({
 }: FooterProps): ReactElement => {
   return (
     <StyledLayout>
-      {children} <StyledMadeBy>Made by @developerAlly</StyledMadeBy>
+      {children} <StyledMadeBy>Adonis</StyledMadeBy>
     </StyledLayout>
   );
 };
