@@ -4,10 +4,10 @@ import { ReactElement } from 'react';
 export const WebHeader: React.FC = (): ReactElement => {
   return (
     <Head>
-      <title>Bacalhau Prompt Generated NFT Art</title>
+      <title>Adonis Prompt Generated NFT PFP</title>
       <meta
         name="description"
-        content="Bacalhau Stable Diffusion for Promt Generated NFT Art by @DeveloperAlly"
+        content="Adonis Stable Diffusion for Promt Generated NFT PFP"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/Bacalhau-plain.png" />
