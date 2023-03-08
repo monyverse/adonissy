@@ -1,8 +1,7 @@
 # ADONIS
 CrossChain ZK Messaging Protocol with AI Generated(Stable Diffusion) token gating PFPs. We use FILECOIN VIRTUAL MACHINE(Hyperspace RPC, ETHGoerli) to generate and store PFPs for token gating. The PFP will be used to gain access to private messaging protocol built on SCROLL using ACCOUNT ABSTRACTION
 
-
-REPOS: 
+REPOS(We're moving all repos to Adonis Labs project account https://github.com/adonislabs): 
 
 FRONTED: https://github.com/monyverse/adonis 
 fRPC: https://github.com/monyverse/fRPC-Substrate
