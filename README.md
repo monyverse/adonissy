@@ -4,7 +4,7 @@ CrossChain ZK Messaging Protocol with AI Generated(Stable Diffusion) token gatin
 REPOS(We're moving all repos to Adonis Labs project account https://github.com/adonislabs): 
 
 FRONTED: https://github.com/monyverse/adonis 
-fRPC: https://github.com/monyverse/fRPC-Substrate
+Fluencelabs fRPC: https://github.com/monyverse/fRPC-Substrate
 SCROLL ACCOUNT ABSTRACTION MESSAGING: https://github.com/monyverse/account_abstraction_scroll
 
 First, run the development server:
