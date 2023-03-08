@@ -23,7 +23,7 @@ export const SubTitle: FC<SubTitleProps> = ({ text }): ReactElement => {
     <Container>
       <StyledSubTitle>
         {text ||
-          'ZK Messaging Protocol with Stable Diffusion generated token gating PFPs'}
+          'ZK Messaging Protocol with Stable Diffusion generated PFPs for token gating'}
       </StyledSubTitle>
     </Container>
   );
