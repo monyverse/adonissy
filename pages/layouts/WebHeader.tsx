@@ -7,7 +7,7 @@ export const WebHeader: React.FC = (): ReactElement => {
       <title>Adonis Prompt Generated NFT PFP</title>
       <meta
         name="description"
-        content="Adonis Stable Diffusion for Promt Generated NFT PFP"
+        content="Adonis Stable Diffusion for Promt Generated NFT PFPs"
       />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/Bacalhau-plain.png" />
