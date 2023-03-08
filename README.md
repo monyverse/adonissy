@@ -1,5 +1,5 @@
 # ADONIS
-CrossChain ZK Messaging Protocol with AI Generated(Stable Diffusion) token gating PFPs
+CrossChain ZK Messaging Protocol with AI Generated(Stable Diffusion) token gating PFPs. We use FILECOIN VIRTUAL MACHINE(Hyperspace RPC, ETHGoerli) to generate and store PFPs for token gating. The PFP will be used to gain access to private messaging protocol built on SCROLL using ACCOUNT ABSTRACTION
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
