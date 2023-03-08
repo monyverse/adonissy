@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-The best way to run the project locally. 
+The best way to run the project locally. Make sure you're connected to Filecoin VM Hyperspace RPC using: url: 'https://api.hyperspace.node.glif.io/rpc/v1', chainId: 3141,  
 
 ```bash
 npm install

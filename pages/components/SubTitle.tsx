@@ -23,7 +23,7 @@ export const SubTitle: FC<SubTitleProps> = ({ text }): ReactElement => {
     <Container>
       <StyledSubTitle>
         {text ||
-          'Text to Image Auto-generating \n AI, ZKBadges for private messaging'}
+          'Text to Image Auto-generating \n AI, ZK PFPs for private messaging'}
       </StyledSubTitle>
     </Container>
   );
