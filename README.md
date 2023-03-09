@@ -6,6 +6,7 @@ REPOS(We're moving all repos to Adonis Labs project account https://github.com/a
 FRONTED: https://github.com/monyverse/adonis 
 Fluencelabs fRPC: https://github.com/monyverse/fRPC-Substrate
 SCROLL ACCOUNT ABSTRACTION MESSAGING: https://github.com/monyverse/account_abstraction_scroll
+Axelar Crosschain Chat: https://github.com/monyverse/axelar-crosschain-chat.git
 
 First, run the development server:
 
