@@ -20,7 +20,7 @@ type LogoProps = {
 
 export const Logo: FC<LogoProps> = ({ href, height, width }) => {
   return (
-    <a href={href || 'https://docs.bacalhau.org/'} target="_blank">
+    <a href={href || 'https://docs.bacalhau.org/'} target="_blank" rel="noreferrer">
       <Image src={src} alt={alt} height={height} width={width} />
     </a>
   );

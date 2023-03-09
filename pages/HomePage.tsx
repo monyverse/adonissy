@@ -431,7 +431,7 @@ const HomePage: FC<HomePageProps> = () => {
           <Typography variant="subtitle1">Mint your first NFT!</Typography>
         ) : (
           <Typography variant="subtitle1">
-            Connect your wallet to see your nft's!
+            Connect your wallet to see your NFTs!
           </Typography>
         )}
         <br />
