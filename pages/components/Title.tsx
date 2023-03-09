@@ -18,5 +18,5 @@ type TitleProps = {
 };
 
 export const Title: FC<TitleProps> = ({ text }): ReactElement => {
-  return <StyledTitle>{text || 'ZK NFTs'}</StyledTitle>;
+  return <StyledTitle>{text || 'Private Messaging'}</StyledTitle>;
 };

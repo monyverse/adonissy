@@ -358,6 +358,7 @@ const HomePage: FC<HomePageProps> = () => {
         <WebHeader />
         <HeaderMenu>
           <>
+            
             <Logo height={50} />
             <WalletButton
               userWallet={userWallet}
@@ -367,7 +368,6 @@ const HomePage: FC<HomePageProps> = () => {
         </HeaderMenu>
         <DappHeader>
           <>
-            <Logo height={100} />
             <Title />
             <SubTitle />
           </>
