@@ -1,4 +1,3 @@
-import { relative } from 'path/posix';
 import { ReactElement, ReactNode, FC } from 'react';
 import styled from 'styled-components';
 
