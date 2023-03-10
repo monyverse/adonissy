@@ -3,7 +3,7 @@ export { WebHeader } from './WebHeader';
 export { LayoutContainer } from './LayoutContainer';
 export { HeaderMenu } from './HeaderMenu';
 export { Footer } from './Footer';
-export { ImagePreviewContainer } from './ImagePreviewContainer.tsx.tsx
+export { ImagePreviewContainer } from './ImagePreviewContainer';
 export { InputContainer } from './InputContainer';
 export { ImageLayout } from './ImageLayout';
 export { DappHeader } from './DappHeader';

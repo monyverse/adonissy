@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { ImageLayout } from '.
+import { ImageLayout } from '.';
 import { Box } from '@mui/material';
 const ipfsHttpGatewayLink = `.ipfs.nftstorage.link/`; //.ipfs.ipfs.joaoleitao.org
 
