@@ -1,7 +1,8 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { FC, useEffect, useState } from 'react';
 import { Button } from '@mui/material';
-import { connectWallet } from '@Utils/helpers/wallet_helper_functions';
-import { Wallet } from '@Utils/definitions/interfaces';
+import { connectWallet } from '../utils/helpers/wallet_helper_functions';
+import { Wallet } from '../utils/definitions/interfaces';
 
 type WalletProps = {
   userWallet: Wallet;

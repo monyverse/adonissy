@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 declare let window: any;
 import { FC, ReactNode, useState, useEffect } from 'react';
 import { NFTStorage } from 'nft.storage';
@@ -10,7 +11,7 @@ import {
   LayoutContainer,
   WebHeader,
   DappHeader,
-} from '@Layouts';
+} from '../../layouts';
 import {
   Logo,
   Title,
@@ -21,33 +22,33 @@ import {
   StatusDisplay,
   PromptButton,
   // MintButton,
-} from '@Components';
+} from '../../components';
 import {
   INITIAL_WALLET_STATUS,
   INITIAL_TRANSACTION_STATE,
   NFT_METADATA_ATTRIBUTES,
-} from '@Utils/definitions/consts';
+} from '../../utils/definitions/consts';
 import {
   loadingMsg,
   successMintingNFTmsg,
   errorMsg,
   genericMsg,
-} from '@Utils/messages';
+} from '../../utils/messages';
 import {
   changeWalletChain,
   checkForWalletConnection,
   setWalletListeners,
-} from '@Utils/helpers/wallet_helper_functions';
+} from '../../utils/helpers/wallet_helper_functions';
 import {
   getContractConnection,
   setContractEventListeners,
-} from '@Utils/helpers/contract_helper_functions';
-import { formatNFTCollectionForDisplay } from '@Utils/helpers/image_helper_functions';
+} from '../../utils/helpers/contract_helper_functions';
+import { formatNFTCollectionForDisplay } from '../../utils/helpers/image_helper_functions';
 import {
   callBacalhauJob,
   getImageBlob,
-} from '@Utils/helpers/general_helper_functions';
-import { BacalhauImage, BacalhauJob } from '@Utils/definitions/interfaces';
+} from '../../utils/helpers/general_helper_functions';
+import { BacalhauImage, BacalhauJob } from '../../utils/definitions/interfaces';
 import { CID } from 'multiformats/cid';
 
 type HomePageProps = {
@@ -168,11 +169,11 @@ const HomePage: FC<HomePageProps> = () => {
   // Stable diffusion script call (text to image prompt)
   const callBacalhauToGenerateImages = async (promptInput: string) => {
     //save to bacalhauImages
-    console.log('Calling Bacalhau & Running Stable Diffusion Script.....');
+    console.log('Calling Adonis & Running Stable Diffusion Script.....');
     setStatus({
       ...INITIAL_TRANSACTION_STATE,
       loading: loadingMsg(
-        'Calling Bacalhau & Running Stable Diffusion Script...'
+        'Calling Adonis & Running Stable Diffusion Script...'
       ),
     });
 
@@ -181,7 +182,7 @@ const HomePage: FC<HomePageProps> = () => {
         console.log('Adonis Job Successful', cid);
         setStatus({
           ...INITIAL_TRANSACTION_STATE,
-          loading: loadingMsg('Creating Metadata from Adonis Job Results...'),
+          loading: loadingMsg('Creating Metadata from Bacalhau Job Results...'),
         });
         const imageIPFSOrigin = `ipfs://${cid}/outputs/image0.png`;
         const imageHTTPURL = `https://${cid}.ipfs.nftstorage.link/outputs/image0.png`;
@@ -194,7 +195,7 @@ const HomePage: FC<HomePageProps> = () => {
             setStatus({
               ...INITIAL_TRANSACTION_STATE,
               success: genericMsg(
-                'Success running Adoniis',
+                'Success running Bacalhau Job',
                 `Job output CID: ${cid}`
               ),
             });
@@ -229,7 +230,7 @@ const HomePage: FC<HomePageProps> = () => {
           .then((imageIPFS) => {
             console.log(imageIPFS);
             nftJSON = {
-              name: 'Adonis Hyperspace ZK NFTs 2023',
+              name: 'Bacalhau Hyperspace NFTs 2023',
               description: promptInput,
               image: imageData, // Blob
               properties: {
@@ -358,7 +359,6 @@ const HomePage: FC<HomePageProps> = () => {
         <WebHeader />
         <HeaderMenu>
           <>
-            
             <Logo height={50} />
             <WalletButton
               userWallet={userWallet}
@@ -368,6 +368,7 @@ const HomePage: FC<HomePageProps> = () => {
         </HeaderMenu>
         <DappHeader>
           <>
+            <Logo height={100} />
             <Title />
             <SubTitle />
           </>

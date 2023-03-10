@@ -1,7 +1,8 @@
+/* eslint-disable @next/next/no-img-element, react-hooks/exhaustive-deps */
 import { FC, ReactNode, useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import { BacalhauImage } from '@Utils/definitions/interfaces';
-import { fetchNFTStoreStatus } from '@Utils/helpers/nftstorage_helper_functions';
+import { BacalhauImage } from '../utils/definitions/interfaces';
+import { fetchNFTStoreStatus } from '../utils/helpers/nftstorage_helper_functions';
 // const { src, alt } = Images.logo;
 
 type ImageLayoutProps = {

@@ -1,9 +1,10 @@
 declare let window: any;
 import { ethers } from 'ethers';
 import BacalhauCompiledContract from '@Contracts/BacalhauFRC721.sol/BacalhauFRC721.json';
-import { CHAIN_DATA, INITIAL_WALLET_STATUS } from '@Utils/definitions/consts';
-import { BacalhauImage, ChainData } from '@Utils/definitions/interfaces';
+import { CHAIN_DATA, INITIAL_WALLET_STATUS } from '..//../utils/definitions/consts';
+import { BacalhauImage, ChainData } from '..//../utils/definitions/interfaces';
 import { genericMsg, successMintingNFTmsg } from '../messages';
+
 
 // TODO: FIX THIS HARD CODING
 const contractAddressHyperspace: string =

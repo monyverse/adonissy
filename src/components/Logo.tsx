@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
-import { Images } from '@Assets/images';
+import { Images } from '../assets/images';
 // import styled from 'styled-components';
 
 const { src, alt } = Images.logoHorizontal;

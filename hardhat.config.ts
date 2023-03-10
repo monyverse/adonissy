@@ -7,7 +7,7 @@ import { HardhatUserConfig } from 'hardhat/config';
 import { resolve } from 'path';
 
 //Import our customised tasks
-// import './pages/api/hardhat/tasks';
+// import './src/api/hardhat/tasks';
 
 const dotenvConfigPath: string = process.env.DOTENV_CONFIG_PATH || './.env';
 dotenvConfig({ path: resolve(__dirname, dotenvConfigPath) });
@@ -41,9 +41,9 @@ const config: HardhatUserConfig = {
     },
   },
   paths: {
-    root: './pages/api/hardhat',
-    tests: './pages/api/hardhat/tests', //who names a directory in the singular?!!!
-    cache: './pages/api/hardhat/cache',
+    root: './src/api/hardhat',
+    tests: './src/api/hardhat/tests', //who names a directory in the singular?!!!
+    cache: './src/api/hardhat/cache',
   },
 };
 

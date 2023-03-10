@@ -1,7 +1,7 @@
 import {
   CHAIN_MAPPINGS,
   INITIAL_WALLET_STATUS,
-} from '@Utils/definitions/consts';
+} from 'src/utils/definitions/consts';
 import { Wallet } from '../definitions/interfaces';
 
 declare let window: any;
